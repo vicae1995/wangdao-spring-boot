@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 890309
+
+
+mybatis:
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: true
+  type-aliases-package: com.zhang.komework10
+logging:
+  level:
+    com.zhang.homework10.mapper: debug

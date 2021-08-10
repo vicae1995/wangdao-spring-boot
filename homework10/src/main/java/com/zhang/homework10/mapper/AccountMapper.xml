@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhang.homework10.mapper.AccountMapper">
+
+    <select id="selectMoney" resultType="java.lang.Integer">
+        select amount from account where username = #{username}
+    </select>
+
+    <update id="update">
+        update account set amount = #{money} where username = #{username}
+    </update>
+</mapper>
